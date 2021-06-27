@@ -1,0 +1,127 @@
+$bg-storm: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
+$icon-storm: url(../res/svg/weather-day-thunderstorm.svg);
+$frost: #00000080;
+$font-family: "Bahnschrift", Times, serif;
+$accent-font: 'M PLUS Rounded 1c', sans-serif;
+
+.frost {
+    background: $frost 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+}
+
+
+body {
+    background-image: $bg-storm;
+    background-size: 160%;
+    position: relative;
+    font-family: $font-family;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header  {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: white;
+
+    .search-bar {
+        width: 380px;
+        height: 20px;
+        padding: 20px;
+        border-radius: 13px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 16px;
+    }
+}
+
+.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .display {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 500px;
+        height: 140px;
+        border-radius: 109px;
+        padding: 30px;
+
+        .icon-display {
+            background-image: $icon-storm;
+            width: 116px;
+            height: 114px;
+
+            max-width: 30%;
+        }
+
+        .main-info-display {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+            max-width: 30%;
+            
+            .temp {
+                font-family: $accent-font;
+                font-weight: 600;
+                font-size: 54px;
+                margin-top: -10px;
+                margin-bottom: -12;
+            }
+
+            .time {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                align-items: center;
+                
+                .hour {
+                    font-size: 30px;
+                }
+            }
+        }
+        
+        .extra-info-display {
+            color: #ffffff80;
+            line-height: 1.5;
+            
+            max-width: 30%;
+            .variables {
+                color: white;
+                opacity: 1;
+            }
+        }
+    }
+    .source {
+        margin: 8px;
+
+        a {
+            color: white;
+            font-style: italic;
+        }
+    }
+}

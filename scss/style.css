@@ -1,0 +1,164 @@
+.frost {
+  background: #00000080 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+
+body {
+  background-image: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
+  background-size: 160%;
+  position: relative;
+  font-family: "Bahnschrift", Times, serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  color: white;
+}
+
+.header .search-bar {
+  width: 380px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+}
+
+.content {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 500px;
+  height: 140px;
+  border-radius: 109px;
+  padding: 30px;
+}
+
+.content .display .icon-display {
+  background-image: url(../res/svg/weather-day-thunderstorm.svg);
+  width: 116px;
+  height: 114px;
+  max-width: 30%;
+}
+
+.content .display .main-info-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 30%;
+}
+
+.content .display .main-info-display .temp {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  margin-top: -10px;
+  margin-bottom: -12;
+}
+
+.content .display .main-info-display .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .display .main-info-display .time .hour {
+  font-size: 30px;
+}
+
+.content .display .extra-info-display {
+  color: #ffffff80;
+  line-height: 1.5;
+  max-width: 30%;
+}
+
+.content .display .extra-info-display .variables {
+  color: white;
+  opacity: 1;
+}
+
+.content .source {
+  margin: 8px;
+}
+
+.content .source a {
+  color: white;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
