@@ -8,7 +8,6 @@
 body {
   background-image: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
   background-size: 160%;
-  position: relative;
   font-family: "Bahnschrift", Times, serif;
   font-weight: 100;
   font-size: 12px;
@@ -19,8 +18,8 @@ body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,5 +159,140 @@ body {
 .content .source a {
   color: white;
   font-style: italic;
+}
+
+.avertizare {
+  background: #FF000880 0% 0% no-repeat padding-box;
+  width: 460px;
+  height: 60px;
+  border-radius: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.avertizare .cod-avert {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.avertizare .fenomen {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+}
+
+.avertizare .fenomen .icon-fenomen {
+  width: 36px;
+  height: 36px;
+  background-image: url(../res/svg/weather-day-thunderstorm_s.svg);
+  margin: 10px;
+}
+
+.avertizare .valabilitate-avert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.avertizare .icon-valab {
+  width: 27px;
+  height: 32px;
+  background-image: url(../res/svg/timer.svg);
+  margin: 10px;
+}
+
+.footer {
+  width: 380px;
+  height: 180px;
+  padding: 8px;
+  border-radius: 100px 100px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.footer .footer-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -30px;
+}
+
+.footer .footer-title div {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer .forecast {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .forecast .forecast-day {
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
