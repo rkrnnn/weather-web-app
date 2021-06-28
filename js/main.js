@@ -46,7 +46,7 @@ function getDayOfTheWeek(date) {
     var weekday = '';
     var d = new Date(date);
     var options = { weekday: 'long'};
-    weekday = new Intl.DateTimeFormat('en-EN', options).format(d);
+    weekday = new Intl.DateTimeFormat('ro-RO', options).format(d);
     
     return weekday;
 }
