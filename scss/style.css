@@ -7,7 +7,7 @@
 
 body {
   background-image: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
-  background-size: 160%;
+  background-size: 150%;
   font-family: "Bahnschrift", Times, serif;
   font-weight: 100;
   font-size: 12px;
@@ -36,13 +36,66 @@ body {
   margin-top: 22px;
   margin-bottom: 22px;
   color: white;
+  font-size: 14px;
+}
+
+.header .day-hours {
+  color: #ffffff80;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10px;
+}
+
+.header .day-hours .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .day-hours .graphics {
+  width: 120px;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 100px 100px 0 0;
+  border: 2px dashed;
+  border-bottom: none;
+}
+
+.header .day-hours .hour {
+  color: white;
 }
 
 .header .search-bar {
   width: 380px;
-  height: 20px;
-  padding: 20px;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 13px;
+  border: none;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,7 +105,16 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   font-size: 16px;
+}
+
+.header .search-bar:focus-visible {
+  outline: none;
+}
+
+.header select option:hover {
+  background-color: black;
 }
 
 .content {
@@ -139,6 +201,11 @@ body {
 
 .content .display .main-info-display .time .hour {
   font-size: 30px;
+}
+
+.content .display .main-info-display .time .day {
+  text-transform: capitalize;
+  font-size: 14px;
 }
 
 .content .display .extra-info-display {
@@ -249,6 +316,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
 }
 
 .footer .footer-title {
@@ -256,16 +327,21 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: -30px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
 }
 
 .footer .footer-title div {
-  font-size: 18px;
+  font-size: 14px;
   margin-right: 10px;
 }
 
 .footer .forecast {
-  height: 80%;
-  width: 100%;
+  height: 75%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +357,7 @@ body {
           align-items: center;
 }
 
-.footer .forecast .forecast-day {
+.footer .forecast .section {
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -294,5 +370,34 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 26px;
+}
+
+.footer .forecast .section .day {
+  font-size: 14px;
+}
+
+.footer .forecast .section .icon {
+  width: 62px;
+  height: 62px;
+  margin-top: 10px;
+}
+
+.footer .forecast .section .rain-wind {
+  background-image: url(../res/svg/weather-rain-wind_m.svg);
+}
+
+.footer .forecast .section .day-sunny {
+  background-image: url(../res/svg/weather-day-sunny_m.svg);
+}
+
+.footer .forecast .section .temp {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

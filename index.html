@@ -14,14 +14,33 @@
     <body>
         <div class="container">
             <div class="header">
-                <div class="search-bar frost">
+                <div class="day-hours">
+                    <div class="col">
+                        <div>Sunrise:</div>
+                        <div class="hour" id="sunrise-hour">6:04</div>
+                    </div>
+                    <div class="col graphics">
+                    </div>
+                    <div class="col">
+                        <div>Sunset:</div>
+                        <div class="hour" id="sunset-hour">19:48</div>
+                    </div>
+                </div>
+
+                <select name="city" class="search-bar frost select">
+                    <option value="Sibiu" selected="selected">Sibiu. Sibiu</option>
+                    <option value="Timisoara">Timisoara, Timis</option>
+                    <option value="Brasov">Brasov, Brasov</option>
+                    <option value="Bucuresti">Bucuresti, Ilfov</option>
+                </select>
+                <!-- <div class="search-bar frost">
                     Sibiu, Sibiu
 
                     <div class="dropdown-icon">
                         v
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+
+            </div> 
 
             <div class="content">
                 <div class="display frost">
@@ -37,7 +56,7 @@
                         </div>
 
                         <div class="temp">
-                            20<sup>o</sup>C
+                            <span>20</span><sup>o</sup>C
                         </div>
                         <div class="weather-descript">
                             Stormy
@@ -78,7 +97,7 @@
         </div>
 
         <div class="footer frost">
-            <div class="footer-title">
+            <div class="footer-title" onclick="toggleFooter()">
                 <div>
                     Forecast
                 </div>
@@ -87,18 +106,51 @@
                 </div>
             </div>
             <div class="forecast">
-                <div class="forecast-day">
-                    Day 01
+                <div class="section">
+                    <div class="day">
+                        Thursday
+                    </div>
+                    <div class="icon rain-wind">
+                    </div>
+                    <div class="temp">
+                        29<sup>o</sup> C
+                    </div>
+                    <div class="weather-descript">
+                        Rain and wind
+                    </div>
                 </div>
-                <div class="forecast-day">
-                    Day 02
+
+                <div class="section">
+                    <div class="day">
+                        Wednesday
+                    </div>
+                    <div class="icon day-sunny">
+                    </div>
+                    <div class="temp">
+                        30<sup>o</sup> C
+                    </div>
+                    <div class="weather-descript">
+                        Sunny
+                    </div>
                 </div>
-                <div class="forecast-day">
-                    Day 03
+
+                <div class="section">
+                    <div class="day">
+                        Tuesday
+                    </div>
+                    <div class="icon rain-wind">
+                    </div>
+                    <div class="temp">
+                        22<sup>o</sup> C
+                    </div>
+                    <div class="weather-descript">
+                        Rain and wind
+                    </div>
                 </div>
             </div>
         </div>
         <!-- JavaScript -->
-        <script src="main.js"></script>
+        <script src="js/getWeatherData.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
