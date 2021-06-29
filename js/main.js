@@ -4,10 +4,32 @@ var footerBody = document.querySelector(".footer");
 var footerHeader = document.querySelector(".footer-title");
 var footerDropdownIcon = document.querySelector(".footer-title > .dropdown-icon");
 
+// Displa for main info
 var timeCurrentDisplay = document.querySelector(".time > .hour");
 var dayOfTheWeekDisplay = document.querySelector(".time > .day");
 var tempCurrentDisplay = document.querySelector(".main-info-display > .temp > span");
 var weatherDescriptCurrentDisplay = document.querySelector(".main-info-display > .weather-descript");
+var weatherIcon = document.querySelector(".display > .icon-display");
+
+
+// Display for extra info
+var humidityDisplay = document.getElementById("humidity");
+var pressureDisplay = document.getElementById("pressure");
+var windSpeedDisplay = document.getElementById("wind-speed");
+var realFeelDisplay = document.getElementById("real-feel");
+
+
+// Get location variables from DOM
+var cityInput = document.querySelector(".search-bar");
+cityInput.addEventListener('change', (event) => updateCity(event));
+
+function updateCity(select) {
+    var city = select.target.value;
+
+    getWeatherData(city);
+}
+
+
 
 displayCurrentTime();
 dayOfTheWeekDisplay.innerText = getDayOfTheWeek(new Date());
@@ -46,7 +68,11 @@ function getDayOfTheWeek(date) {
     var weekday = '';
     var d = new Date(date);
     var options = { weekday: 'long'};
-    weekday = new Intl.DateTimeFormat('ro-RO', options).format(d);
+    weekday = new Intl.DateTimeFormat(lang, options).format(d);
     
     return weekday;
 }
+
+
+
+
