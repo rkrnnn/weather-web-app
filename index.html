@@ -2,7 +2,7 @@
     <head>
         <!-- CSS -->
         <link rel="stylesheet" href="scss/style.css">
-
+        <link rel="stylesheet" href="scss/weather-icons.css">
         <!-- Fonts -->
         <!-- Rounded Mplus 1c -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,10 +29,13 @@
 
                 <select name="city" class="search-bar frost select">
                     <option value="Sibiu" selected="selected">Sibiu. Sibiu</option>
+                    <option value="Paltinis">Paltinis, Sibiu</option>
                     <option value="Timisoara">Timisoara, Timis</option>
                     <option value="Brasov">Brasov, Brasov</option>
+                    <option value="Rasnov">Rasnov, Brasov</option>
                     <option value="Bucharest">Bucuresti, Ilfov</option>
                     <option value="Suceava">Suceava, Suceava</option>
+                    <option value="Tecuci">Tecuci, Galati</option>
                 </select>
 
             </div> 
@@ -70,23 +73,27 @@
                     Source: <a href="https://openweathermap.org/">https://openweathermap.org/</a>  
                 </div>
 
-                <div class="avertizare frost">
-                    <div class="cod-avert">
-                        COD: <span id="avert-display"></span>ROSU
-                    </div>
-                    <div class="fenomen">
-                        <div class="icon-fenomen"></div>
-                        <div class="text-fenomen">Furtuni</div>
-                    </div>
-                    <div class="valabilitate-avert">
-                        <div class="icon-valab"></div>
-                        <div class="text-valab"><span id="date-valab">27/06/2021</span><br><span id="hourvalab">23:00</span></div>
-                    </div>
+                <div class="avert-disp">
+
+                    <!-- <div class="avertizare frost">
+                        <div class="cod-avert">
+                            COD: <span id="avert-display">ROSU</span>
+                        </div>
+                        <div class="fenomen">
+                            <div class="icon-fenomen"></div>
+                            <div class="text-fenomen">Furtuni</div>
+                        </div>
+                        <div class="valabilitate-avert">
+                            <div class="icon-valab"></div>
+                            <div class="text-valab"><span id="date-valab">27/06/2021</span><br><span id="hour-valab">23:00</span></div>
+                        </div>
+                    </div> -->
+
                 </div>
 
-                <div class="source">
+                <!-- <div class="source">
                     Source: <a href="https://openweathermap.org/">https://openweathermap.org/</a>  
-                </div>
+                </div> -->
             </div>
 
         </div>
@@ -105,7 +112,7 @@
                     <div class="day">
                         Thursday
                     </div>
-                    <div class="icon rain-wind">
+                    <div class="icon">
                     </div>
                     <div class="temp">
                         29<sup>o</sup> C
@@ -119,7 +126,7 @@
                     <div class="day">
                         Wednesday
                     </div>
-                    <div class="icon day-sunny">
+                    <div class="icon">
                     </div>
                     <div class="temp">
                         30<sup>o</sup> C
@@ -133,7 +140,7 @@
                     <div class="day">
                         Tuesday
                     </div>
-                    <div class="icon rain-wind">
+                    <div class="icon">
                     </div>
                     <div class="temp">
                         22<sup>o</sup> C
@@ -146,6 +153,7 @@
         </div>
         <!-- JavaScript -->
         <script src="js/getWeatherData.js"></script>
+        <script src="js/getForecastData.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

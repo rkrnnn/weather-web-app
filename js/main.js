@@ -19,6 +19,11 @@ var windSpeedDisplay = document.getElementById("wind-speed");
 var realFeelDisplay = document.getElementById("real-feel");
 
 
+// Display for sunrise, sunset
+var sunriseDisplay = document.getElementById("sunrise-hour");
+var sunsetDisplay = document.getElementById("sunset-hour");
+
+
 // Get location variables from DOM
 var cityInput = document.querySelector(".search-bar");
 cityInput.addEventListener('change', (event) => updateCity(event));
@@ -53,7 +58,7 @@ function toggleFooter() {
 
 function displayCurrentTime() {
     var d = new Date();
-    var n = d.toLocaleTimeString('ro-RO' , { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    var n = d.toLocaleTimeString(lang , { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
     timeCurrentDisplay.innerText = n;
     refreshTimeDisplay();

@@ -1,0 +1,112 @@
+.day-rain {
+  background-image: url(../res/svg/weather-day-rain.svg);
+}
+
+.night-rain {
+  background-image: url(../res/svg/weather-night-alt-rain.svg);
+}
+
+.day-clear {
+  background-image: url(../res/svg/weather-day-sunny.svg);
+}
+
+.night-clear {
+  background-image: url(../res/svg/weather-night-clear.svg);
+}
+
+.day-thunderstorm {
+  background-image: url(../res/svg/weather-day-thunderstorm.svg);
+}
+
+.night-thunderstorm {
+  background-image: url(../res/svg/wweather-night-alt-thunderstorm.svg);
+}
+
+.day-drizzle {
+  background-image: url(../res/svg/weather-day-showers.svg);
+}
+
+.night-drizzle {
+  background-image: url(../res/svg/weather-night-alt-showers.svg);
+}
+
+.day-snow {
+  background-image: url(../res/svg/weather-day-snow.svg);
+}
+
+.night-snow {
+  background-image: url(../res/svg/weather-night-alt-snow.svg);
+}
+
+.atmospheric {
+  background-image: url(../res/svg/weather-fog.svg);
+}
+
+.day-clouds25 {
+  background-image: url(../res/svg/weather-day-sunny-overcast.svg);
+}
+
+.night-clouds25 {
+  background-image: url(../res/svg/weather-night-alt-partly-cloudy.svg);
+}
+
+.day-clouds50 {
+  background-image: url(../res/svg/weather-day-cloudy-high.svg);
+}
+
+.night-clouds50 {
+  background-image: url(../res/svg/weather-night-alt-cloudy-high.svg);
+}
+
+.day-clouds84 {
+  background-image: url(../res/svg/weather-day-cloudy.svg);
+}
+
+.night-clouds84 {
+  background-image: url(../res/svg/weather-night-alt-cloudy.svg);
+}
+
+.clouds {
+  background-image: url(../res/svg/weather-cloudy.svg);
+}
+
+.GALBEN {
+  background: #ffdb12a1 0% 0% no-repeat padding-box;
+}
+
+.PORTOCALIU {
+  background: #ff7b00b7 0% 0% no-repeat padding-box;
+}
+
+.ROSU {
+  background: #FF000880 0% 0% no-repeat padding-box;
+}
+
+.heavy-rain {
+  background-image: url(../res/svg/alert/weather-rain.svg);
+}
+
+.high-temp {
+  background-image: url(../res/svg/alert/hot.svg);
+}
+
+.storms {
+  background-image: url(../res/svg/alert/weather-thunderstorm.svg);
+}
+
+.snow {
+  background-image: url(../res/svg/alert/weather-snowflake-cold.svg);
+}
+
+.low-temp {
+  background-image: url(../res/svg/alert/low.svg);
+}
+
+.dense-fog {
+  background-image: url(../res/svg/alert/weather-fog.svg);
+}
+
+.strong-wind {
+  background-image: url(../res/svg/alert/wind.svg);
+}
+/*# sourceMappingURL=weather-icons.css.map */

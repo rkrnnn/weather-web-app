@@ -1,7 +1,7 @@
 // $bg-storm: url(https://www.sibiu.ro/webcamfeeds/webcam6.jpg?rand=952400);
 $bg-storm: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
 $icon-storm: url(../res/svg/weather-day-thunderstorm.svg);
-$icon-storm_s: url(../res/svg/weather-day-thunderstorm_s.svg);
+$icon-storm_s: url(../res/svg/weather-day-thunderstorm.svg);
 $icon-timer: url(../res/svg/timer.svg);
 $frost: #00000080;
 $font-family: "Bahnschrift", Times, serif;
@@ -117,9 +117,10 @@ body {
         height: 100px;
         border-radius: 109px;
         padding: 30px;
+        margin-bottom: 8px;
 
         .icon-display {
-            background-image: $icon-storm;
+            // background-image: $icon-storm;
             background-size: 90px 90px;
             width: 90px;
             height: 90px;
@@ -173,8 +174,6 @@ body {
         }
     }
     .source {
-        margin: 8px;
-
         a {
             color: white;
             font-style: italic;
@@ -182,16 +181,24 @@ body {
     }
 }
 
-.avertizare {
-    background: #FF000880 0% 0% no-repeat padding-box;
+.avert-disp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
 
-    width: 400px;
+.avertizare {
     height: 50px;
+    width: -webkit-fill-available;
+    margin: 6px;
     border-radius: 109px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .cod-avert {
         font-family: $accent-font;
@@ -211,7 +218,7 @@ body {
         .icon-fenomen {
             width: 30px;
             height: 30px;
-            background-image: $icon-storm_s;
+            // background-image: $icon-storm_s;
             background-size: 30px 30px;
             margin: 10px;
         }
@@ -259,7 +266,7 @@ body {
         animation: ease-in-out;
         
         div {
-            font-size: 12px;
+            font-size: 14px;
             margin-right: 10px;
         }
     }
@@ -291,14 +298,7 @@ body {
                 margin-top: 10px;
             }
 
-            .rain-wind {
-                background-image: url(../res/svg/weather-rain-wind_m.svg);
-            }
-
-            .day-sunny {
-                background-image: url(../res/svg/weather-day-sunny_m.svg);
-            }
-    
+            
             .temp {
                 font-family: $accent-font;
                 font-size: 22px;
@@ -307,3 +307,28 @@ body {
         }
     }
 }
+
+// Alert tooltip
+// .tooltip {
+//     position: relative;
+//     display: inline-block;
+//     border-bottom: 1px dotted black;
+//   }
+  
+//   .tooltip .tooltiptext {
+//     visibility: hidden;
+//     width: 120px;
+//     background-color: black;
+//     color: #fff;
+//     text-align: center;
+//     border-radius: 6px;
+//     padding: 5px 0;
+  
+//     /* Position the tooltip */
+//     position: absolute;
+//     z-index: 1;
+//   }
+  
+//   .tooltip:hover .tooltiptext {
+//     visibility: visible;
+//   }

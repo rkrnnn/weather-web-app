@@ -148,10 +148,10 @@ body {
   height: 100px;
   border-radius: 109px;
   padding: 30px;
+  margin-bottom: 8px;
 }
 
 .content .display .icon-display {
-  background-image: url(../res/svg/weather-day-thunderstorm.svg);
   background-size: 90px 90px;
   width: 90px;
   height: 90px;
@@ -220,28 +220,42 @@ body {
   opacity: 1;
 }
 
-.content .source {
-  margin: 8px;
-}
-
 .content .source a {
   color: white;
   font-style: italic;
 }
 
+.avert-disp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 .avertizare {
-  background: #FF000880 0% 0% no-repeat padding-box;
-  width: 400px;
   height: 50px;
+  width: -webkit-fill-available;
+  margin: 6px;
   border-radius: 109px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .avertizare .cod-avert {
@@ -268,7 +282,6 @@ body {
 .avertizare .fenomen .icon-fenomen {
   width: 30px;
   height: 30px;
-  background-image: url(../res/svg/weather-day-thunderstorm_s.svg);
   background-size: 30px 30px;
   margin: 10px;
 }
@@ -338,7 +351,7 @@ body {
 }
 
 .footer .footer-title div {
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 10px;
 }
 
@@ -388,14 +401,6 @@ body {
   width: 62px;
   height: 62px;
   margin-top: 10px;
-}
-
-.footer .forecast .section .rain-wind {
-  background-image: url(../res/svg/weather-rain-wind_m.svg);
-}
-
-.footer .forecast .section .day-sunny {
-  background-image: url(../res/svg/weather-day-sunny_m.svg);
 }
 
 .footer .forecast .section .temp {
