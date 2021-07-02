@@ -29,7 +29,7 @@ body {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -80%);
 
     display: flex;
     flex-direction: column;
@@ -240,10 +240,11 @@ body {
 }
 
 .footer {
-    width: 380px;
+    width: fit-content;
     height: 180px;
     padding: 8px;
-    border-radius: 100px 100px 0 0;
+    
+    border-radius: 80px 80px 0 0;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -266,36 +267,41 @@ body {
         animation: ease-in-out;
         
         div {
-            font-size: 14px;
+            font-size: 16px;
             margin-right: 10px;
         }
     }
 
     .forecast {
         height: 75%;
-        width: 80%;
+        width: 90%;
+        padding-top: 36px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
 
         .section {
-            width: 100%;
+            width: 90px;
             align-content: center;
             justify-content: center;
             display: flex;
             align-items: center;
             flex-direction: column;
-            margin-bottom: 26px;
+            margin-bottom: 40px;
+            margin-left: 14px;
+            margin-right: 14px;
 
             .day {
                 font-size: 14px;
+                text-transform: capitalize;
             }
     
             .icon {
                 width: 62px;
                 height: 62px;
                 margin-top: 10px;
+                background-size: 62px 62px;
             }
 
             

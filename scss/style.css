@@ -18,8 +18,8 @@ body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -60%);
-          transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -80%);
+          transform: translate(-50%, -80%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,10 +308,12 @@ body {
 }
 
 .footer {
-  width: 380px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 180px;
   padding: 8px;
-  border-radius: 100px 100px 0 0;
+  border-radius: 80px 80px 0 0;
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -351,13 +353,14 @@ body {
 }
 
 .footer .footer-title div {
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 10px;
 }
 
 .footer .forecast {
   height: 75%;
-  width: 80%;
+  width: 90%;
+  padding-top: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +377,7 @@ body {
 }
 
 .footer .forecast .section {
-  width: 100%;
+  width: 90px;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -390,17 +393,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 26px;
+  margin-bottom: 40px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .footer .forecast .section .day {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .footer .forecast .section .icon {
   width: 62px;
   height: 62px;
   margin-top: 10px;
+  background-size: 62px 62px;
 }
 
 .footer .forecast .section .temp {

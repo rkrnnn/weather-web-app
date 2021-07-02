@@ -77,7 +77,7 @@
 // Alert colors
 
 .GALBEN {
-    background: #ffdb12a1 0% 0% no-repeat padding-box;
+    background: #daa805a8 0% 0% no-repeat padding-box;
 }
 
 .PORTOCALIU {
@@ -90,31 +90,55 @@
 
 
 // Alert icons
-
-.heavy-rain {
-    background-image: url(../res/svg/alert/weather-rain.svg);
-}
-
-.high-temp {
-    background-image: url(../res/svg/alert/hot.svg);
-}
-
-.storms {
-    background-image: url(../res/svg/alert/weather-thunderstorm.svg);
+.strong-wind {
+    background-image: url(../res/svg/alert/wind.svg);
 }
 
 .snow {
     background-image: url(../res/svg/alert/weather-snowflake-cold.svg);
 }
 
-.low-temp {
-    background-image: url(../res/svg/alert/low.svg);
+.storms {
+    background-image: url(../res/svg/alert/weather-thunderstorm.svg);
 }
 
 .dense-fog {
     background-image: url(../res/svg/alert/weather-fog.svg);
 }
 
-.strong-wind {
-    background-image: url(../res/svg/alert/wind.svg);
+.high-temp {
+    background-image: url(../res/svg/alert/hot.svg);
 }
+
+
+.low-temp {
+    background-image: url(../res/svg/alert/low.svg);
+}
+
+.coastal {
+    background-image: url(../res/svg/alert/waves.svg);
+}
+
+.forest-fire {
+    background-image: url(../res/svg/alert/forestfire.svg);
+}
+
+.avalanche {
+    background-image: url(../res/svg/alert/snow-avalanche.svg);
+}
+
+.heavy-rain {
+    background-image: url(../res/svg/alert/weather-rain.svg);
+}
+
+.flood {
+    background-image: url(../res/svg/alert/flooded-house.svg);
+}
+
+.rain-flood {
+    background-image: url(../res/svg/alert/rain-flood.svg);
+}
+
+
+
+
