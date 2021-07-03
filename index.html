@@ -3,6 +3,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="scss/style.css">
         <link rel="stylesheet" href="scss/weather-icons.css">
+        <link rel="stylesheet" href="scss/sun-anim.css">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,22 @@
         <title>Weather Web App</title>
     </head>
     <body>
+        <style>
+            @keyframes move {
+                0% {
+                    motion-offset: 0%;
+                    offset-distance: 0%;
+                }
+                100% {}
+            }
+            @keyframes fill {
+                0% {
+                    stroke-dasharray: 200px;
+                    stroke-dashoffset: 200px;
+                }
+                100% {}
+            }
+        </style>
         <div class="container">
             <div class="header">
                 <div class="day-hours">
@@ -22,7 +39,11 @@
                         <div>Sunrise:</div>
                         <div class="hour" id="sunrise-hour">6:04</div>
                     </div>
-                    <div class="col graphics">
+                    <div class="graphics">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 61"><defs><style>.cls-1,.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;}.cls-2{stroke-dasharray:2 8;}</style></defs><title>sun-path</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M.5,61q0-.5,0-1"/><path class="cls-2" d="M1.16,52A60.51,60.51,0,0,1,121.3,56"/><path class="cls-1" d="M121.49,60q0,.5,0,1"/></g></g></svg>
+                        <svg class="arc-full anim-elapsed"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.99 61.02"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>sun-elapsed</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M.5,61V60l.66-8A60.51,60.51,0,0,1,121.3,56l.19,4v1"/></g></g></svg>
+
+                        <div class="sun-mark anim"></div>
                     </div>
                     <div class="col">
                         <div>Sunset:</div>
@@ -31,14 +52,15 @@
                 </div>
 
                 <select name="city" class="search-bar frost select">
-                    <option value="Sibiu" selected="selected">Sibiu. Sibiu</option>
-                    <option value="Paltinis">Paltinis, Sibiu</option>
-                    <option value="Timisoara">Timisoara, Timis</option>
-                    <option value="Brasov">Brasov, Brasov</option>
-                    <option value="Rasnov">Rasnov, Brasov</option>
-                    <option value="Bucharest">Bucuresti, Ilfov</option>
-                    <option value="Suceava">Suceava, Suceava</option>
-                    <option value="Tecuci">Tecuci, Galati</option>
+                    <option value="Sibiu,ro" selected="selected">Sibiu. Sibiu</option>
+                    <option value="Paltinis,ro">Paltinis, Sibiu</option>
+                    <option value="Timisoara,ro">Timisoara, Timis</option>
+                    <option value="Brasov,ro">Brasov, Brasov</option>
+                    <option value="Rasnov,ro">Rasnov, Brasov</option>
+                    <option value="Bucharest,ro">Bucuresti, Ilfov</option>
+                    <option value="Suceava,ro">Suceava, Suceava</option>
+                    <option value="Tecuci,ro">Tecuci, Galati</option>
+                    <!-- <option value="Tokyo,jp">Tokyo, Japan</option> -->
                 </select>
 
             </div> 
@@ -77,26 +99,7 @@
                 </div>
 
                 <div class="avert-disp">
-
-                    <!-- <div class="avertizare frost">
-                        <div class="cod-avert">
-                            COD: <span id="avert-display">ROSU</span>
-                        </div>
-                        <div class="fenomen">
-                            <div class="icon-fenomen"></div>
-                            <div class="text-fenomen">Furtuni</div>
-                        </div>
-                        <div class="valabilitate-avert">
-                            <div class="icon-valab"></div>
-                            <div class="text-valab"><span id="date-valab">27/06/2021</span><br><span id="hour-valab">23:00</span></div>
-                        </div>
-                    </div> -->
-
                 </div>
-
-                <!-- <div class="source">
-                    Source: <a href="https://openweathermap.org/">https://openweathermap.org/</a>  
-                </div> -->
             </div>
 
         </div>
@@ -158,6 +161,7 @@
         <script src="js/getWeatherData.js"></script>
         <script src="js/getForecastData.js"></script>
         <script src="js/getAlertData.js"></script>
+        <script src="js/sunAnimation.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

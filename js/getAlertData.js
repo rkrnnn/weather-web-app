@@ -29,14 +29,14 @@ var alertDummy = [{
 
 function parseAlertData(json) {
     console.log(json);
-    // if (json.alerts) {
-    //     getWeatherAlerts(json.alerts);
-    // }
-    // else {
-    //     getWeatherAlerts(alertDummy);
-    // }
+    if (json.alerts) {
+        getWeatherAlerts(json.alerts);
+    }
+    else {
+        // getWeatherAlerts(alertDummy);
+    }
 
-    getWeatherAlerts(json.alerts);
+    // getWeatherAlerts(json.alerts);
 }
 
 
@@ -48,6 +48,7 @@ function getWeatherAlerts(obj) {
     while (i < obj.length) {
         var alert = createAlert(obj[i])
         displayAlerts.appendChild(alert);
+        
 
         i++;
     }
@@ -60,6 +61,7 @@ function createAlert(obj) {
     var alertDisplayDIV = document.createElement("DIV");
     alertDisplayDIV.classList.add("avertizare");
     alertDisplayDIV.classList.add("frost");
+    alertDisplayDIV.classList.add("tooltip");
 
     var cod = getAlertSeverity(obj);
     alertDisplayDIV.classList.add(cod);
@@ -69,10 +71,16 @@ function createAlert(obj) {
     var alertEndDIV = createAlertEndDisplay(obj);
     // var tooltip = createTooltip(obj);
     // alertDisplayDIV.classList.add("tooltip");
+    var tooltip = document.createElement("SPAN");
+    tooltip.classList.add("tooltiptext");
+    // tooltip.classList.add(cod);
+    tooltip.classList.add("frost");
+    tooltip.innerText = obj.description;
 
     alertDisplayDIV.appendChild(codAvertDIV);
     alertDisplayDIV.appendChild(fenomenDisplayDIV);
     alertDisplayDIV.appendChild(alertEndDIV);
+    alertDisplayDIV.appendChild(tooltip);
     // alertDisplayDIV.appendChild(tooltip);
     
     return alertDisplayDIV;

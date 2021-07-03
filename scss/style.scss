@@ -59,17 +59,6 @@ body {
             align-items: center;
         }
 
-        .graphics {
-            width: 120px;
-            height: 60px;
-            // background-color: white;
-            margin-right: 10px;
-            margin-left: 10px;
-            border-radius: 100px 100px 0 0;
-            border: 2px dashed;
-            border-bottom: none;
-        }
-
         .hour {
             color: white;
         }
@@ -187,6 +176,36 @@ body {
     align-items: center;
     align-content: center;
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+    margin: 5rem;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    display: flex;
+    color: #fff;
+    font-size: 14px;
+    align-content: center;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 25px;
+    width: 100%;
+    height: 60%;
+    left: 0%;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 .avertizare {
     height: 50px;

@@ -1,0 +1,53 @@
+.graphics {
+  width: 120px;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.sun-mark {
+  background-color: white;
+  height: 14px;
+  width: 14px;
+  bottom: 44px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.arc-full {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  left: 0;
+  stroke-width: 2px;
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+}
+
+.anim {
+  motion-path: path("M1.16,52A60.51,60.51,0,0,1,121.3,56");
+  offset-path: path("M1.16,52A60.51,60.51,0,0,1,121.3,56");
+  -webkit-animation: move 2s ease-in-out;
+          animation: move 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.anim-add {
+  motion-offset: 10%;
+  offset-distance: 10%;
+}
+
+.anim-elapsed {
+  -webkit-animation: fill 2s ease-in-out;
+          animation: fill 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.anim-elapsed-add {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 200px;
+}
+/*# sourceMappingURL=sun-anim.css.map */
