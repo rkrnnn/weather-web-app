@@ -14,14 +14,14 @@ var alertDummy = [{
     event: 'advert-type====5, advert-level=2',
     start: 1625107035,
     end: 1625163418,
-    description: 'În intervalul menționat, în cea mai mare parte a țării, vor fi perioade cu instabilitate atmosferică temporar accentuată ce se va manifesta prin averse torențiale, descărcări electrice și pe arii restrânse grindină și vijelii. În intervale scurte de timp sau prin acumulare, cantitățile de apă vor depăși local 25...40 l/mp.'
+    description: 'Descriere.'
 },
 {
     sender_name: 'National Meteorological Administration',
     event: 'advert-type====2, advert-level=4',
     start: 1625107035,
     end: 1625163418,
-    description: 'În intervalul menționat, în cea mai mare parte a țării, vor fi perioade cu instabilitate atmosferică temporar accentuată ce se va manifesta prin averse torențiale, descărcări electrice și pe arii restrânse grindină și vijelii. În intervale scurte de timp sau prin acumulare, cantitățile de apă vor depăși local 25...40 l/mp.'
+    description: 'Descriere.'
 }
 ]
 
@@ -33,7 +33,7 @@ function parseAlertData(json) {
         getWeatherAlerts(json.alerts);
     }
     else {
-        // getWeatherAlerts(alertDummy);
+        getWeatherAlerts(alertDummy);
     }
 
     // getWeatherAlerts(json.alerts);

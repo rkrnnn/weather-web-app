@@ -1,0 +1,51 @@
+
+// Weather backgrounds
+body {
+    &.rain {
+        background-image: url(../img/recomandarile-ipj-sibiu.jpg);
+    }
+    
+    
+    &.clear {
+        background-image: url(../img/sb_sunny.png);
+    }
+    
+    
+    &.thunderstorm {
+        background-image: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
+    }
+    
+    
+    &.drizzle {
+        background-image: url(../img/ploaie-sibiu-1-750x430.jpeg);
+    }
+    
+    
+    &.snow {
+        background-image: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
+    }
+    
+    &.atmospheric {
+        background-image: url(../res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png);
+    }
+    
+    
+    &.clouds25 {
+        background-image: url(../img/pexels-fillipe-gomes-2093252.jpg);
+    }
+    
+    &.clouds50 {
+        background-image: url(../img/pexels-fillipe-gomes-2093252.jpg);
+    }
+    
+    
+    &.clouds84 {
+        background-image: url(../img/pexels-fillipe-gomes-2093252.jpg);
+    }
+    
+    &.clouds {
+        background-image: url(../img/pexels-fillipe-gomes-2093252.jpg);
+    }
+
+}
+

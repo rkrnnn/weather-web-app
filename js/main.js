@@ -1,5 +1,7 @@
 console.log('main.js loaded');
 
+var body = document.querySelector("body");
+
 var footerBody = document.querySelector(".footer");
 var footerHeader = document.querySelector(".footer-title");
 var footerDropdownIcon = document.querySelector(".footer-title > .dropdown-icon");

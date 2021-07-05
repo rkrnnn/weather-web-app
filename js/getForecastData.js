@@ -48,7 +48,7 @@ function getForecastForDay(day) {
     // console.log(getDayOfTheWeek(d));
 
     var iconDisplay = document.createElement("DIV");
-    iconDisplay.classList.add(updateWeatherIcon(day.weather[0].id, 'day'));
+    iconDisplay.classList.add(updateWeatherClass(day.weather[0].id, 'day-'));
     iconDisplay.classList.add("icon");
     // console.log(updateWeatherIcon(day.weather[0].id, 'day'));
 

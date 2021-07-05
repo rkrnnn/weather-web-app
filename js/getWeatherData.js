@@ -62,7 +62,8 @@ function displayMainInfo(json) {
     }
     
     weatherIcon.className = 'icon-display';
-    weatherIcon.classList.add(updateWeatherIcon(json.weather[0].id, timeOfDay));
+    weatherIcon.classList.add(updateWeatherClass(json.weather[0].id, timeOfDay + '-'));
+    // body.classList.add(updateWeatherClass(json.weather[0].id, ''));
     // document.querySelector("body").style.backgroundImage = updateWeatherBg(json.weather[0].icon);
 }
 
@@ -75,24 +76,24 @@ function displayExtraInfo(json) {
 }
 
 
-function updateWeatherIcon(id, timeOfDay) {
+function updateWeatherClass(id, timeOfDay) {
     var weatherClass = '';
 
     // Source: https://openweathermap.org/weather-conditions
     if (id < 300) {
-        weatherClass = timeOfDay + '-thunderstorm';
+        weatherClass = timeOfDay + 'thunderstorm';
     }
     else {
         if (id < 500) {
-            weatherClass = timeOfDay + '-drizzle';
+            weatherClass = timeOfDay + 'drizzle';
         }
         else {
             if (id < 600) {
-                weatherClass = timeOfDay + '-rain';
+                weatherClass = timeOfDay + 'rain';
             }
             else {
                 if (id < 700) {
-                    weatherClass = timeOfDay + '-snow';
+                    weatherClass = timeOfDay + 'snow';
                 }
                 else {
                     if (id < 800) {
@@ -101,16 +102,16 @@ function updateWeatherIcon(id, timeOfDay) {
                     else {
                         switch (parseInt(id)) {
                             case 800:
-                                weatherClass = timeOfDay + '-clear';
+                                weatherClass = timeOfDay + 'clear';
                                 break;
                             case 801:
-                                weatherClass = timeOfDay + '-clouds25';
+                                weatherClass = timeOfDay + 'clouds25';
                                 break;
                             case 802:
-                                weatherClass = timeOfDay + '-clouds50';
+                                weatherClass = timeOfDay + 'clouds50';
                                 break;
                             case 803:
-                                weatherClass = timeOfDay + '-clouds84';
+                                weatherClass = timeOfDay + 'clouds84';
                                 break;
                             default:
                                 weatherClass = 'clouds';
@@ -124,25 +125,6 @@ function updateWeatherIcon(id, timeOfDay) {
     }
 
     return weatherClass;
-}
-
-function updateWeatherBg(id) {
-    var img = '';
-    console.log(id);
-    switch (id) {
-        // Source: https://openweathermap.org/weather-conditions
-        case '01d':
-            img = 'url(./img/sb_sunny.png)';
-            break;
-        case '11d':
-            img = 'url(./res/pexels-josh-sorenson-1154510/pexels-josh-sorenson-1154510.png)';
-            break;
-        default:
-            img = 'url(./img/sibiu-vreme-meteo-ploaie-furtuna-2-e2dd.jpeg)';
-            break;
-    }
-
-    return img;
 }
 
 
